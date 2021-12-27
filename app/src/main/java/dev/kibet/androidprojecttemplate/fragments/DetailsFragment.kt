@@ -6,16 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import dev.kibet.androidprojecttemplate.R
-import dev.kibet.androidprojecttemplate.databinding.FragmentMainBinding
+import dev.kibet.androidprojecttemplate.databinding.FragmentDetailsBinding
 
-class MainFragment : Fragment() {
-    private var _binding: FragmentMainBinding? = null
+class DetailsFragment : Fragment() {
+    private var _binding: FragmentDetailsBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentMainBinding.inflate(layoutInflater)
+        _binding = FragmentDetailsBinding.inflate(layoutInflater)
         return binding.root
     }
 
@@ -25,6 +25,6 @@ class MainFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
+        _binding =  null
     }
 }
