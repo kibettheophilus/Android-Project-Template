@@ -13,7 +13,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 val dataModule = module {
-    single<MainRepository> { MainRepositoryImpl(get()) }
+    single<MainRepository> { MainRepositoryImpl(get(),get()) }
     single {
         Retrofit.Builder()
             .baseUrl(BASEURL)
