@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="dev.kibet.androidprojecttemplate.fragments.MainFragment"
+        android:name="com.example.androidprojecttemplate.fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="dev.kibet.androidprojecttemplate.fragments.DetailsFragment"
+        android:name="com.example.androidprojecttemplate.fragments.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
         <argument
