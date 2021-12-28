@@ -3,8 +3,8 @@ Skip the process of setting up an android app by using this template.
 
 ## Prerequisites
 Have an idea about:
-- clean architecture
-- dependancy injection
+- Clean Architecture
+- Dependancy Injection
 
 ## How to use it
 - Either fork or click on ```use template``` on the top.
