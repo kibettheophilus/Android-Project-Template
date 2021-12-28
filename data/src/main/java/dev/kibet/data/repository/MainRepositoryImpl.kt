@@ -7,16 +7,18 @@ import dev.kibet.domain.repository.MainRepository
 import dev.kibet.domain.utils.Resource
 import retrofit2.HttpException
 
-class MainRepositoryImpl(private val api: ApiService, private val dao: DummyDataDao): MainRepository {
+class MainRepositoryImpl(private val api: ApiService, private val dao: DummyDataDao) :
+    MainRepository {
     override suspend fun getDummyData(): Resource<List<DummyData>> {
+        val localData = dao.getAllDummy()
         return try {
             val data = api.getDummyData()
             Resource.success(data)
-        }catch (e: Exception){
-            return if (e is HttpException){
-                Resource.error("$e",null)
-            }else {
-                Resource.error("Couldn't connect to server, $e",null)
+        } catch (e: Exception) {
+            return if (e is HttpException) {
+                Resource.error("$e", null)
+            } else {
+                Resource.error("Couldn't connect to server, $e", null)
             }
         }
     }

@@ -7,5 +7,6 @@ import androidx.room.PrimaryKey
 data class DummyDataEntity(
     @PrimaryKey(autoGenerate = false)
     val id: Int,
-    val name: String
+    val name: String,
+    val image: String
 )
