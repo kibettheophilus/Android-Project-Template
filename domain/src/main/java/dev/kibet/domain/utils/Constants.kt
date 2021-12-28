@@ -1,5 +1,5 @@
 package dev.kibet.domain.utils
 
 object Constants {
-    const val BASEURL = ""
+    const val BASE_URL = "https://api.dummydata.com"
 }
