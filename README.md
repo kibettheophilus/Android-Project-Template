@@ -28,9 +28,6 @@ Have an idea about:
 - [OkHttp-Logging-Interceptor](https://github.com/square/okhttp/blob/master/okhttp-logging-interceptor/README.md) - Logs HTTP request and response data.
 - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) - Library Support for coroutines.
 - [Flow](https://developer.android.com/kotlin/flow) - Flows are built on top of coroutines and can provide multiple values. A flow is conceptually a stream of data that can be computed asynchronously.
-- [Expresso](https://developer.android.com/training/testing/espresso) - Library used to write concise, beautiful, and reliable Android UI tests.
-
-
 
 ## License
 ```
