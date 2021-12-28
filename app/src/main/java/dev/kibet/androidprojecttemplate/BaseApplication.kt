@@ -1,6 +1,7 @@
-package dev.kibet.androidprojecttemplate.di
+package dev.kibet.androidprojecttemplate
 
 import android.app.Application
+import dev.kibet.androidprojecttemplate.di.presentationModule
 import dev.kibet.data.di.dataModule
 import dev.kibet.domain.di.domainModule
 import org.koin.android.ext.koin.androidContext
@@ -11,7 +12,7 @@ class BaseApplication : Application() {
         super.onCreate()
         startKoin {
             androidContext(this@BaseApplication)
-            modules(listOf(dataModule, domainModule))
+            modules(listOf(presentationModule, dataModule, domainModule))
         }
     }
 }

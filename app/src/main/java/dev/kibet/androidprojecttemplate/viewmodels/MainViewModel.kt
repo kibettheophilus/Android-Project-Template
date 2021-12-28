@@ -1,8 +1,8 @@
 package dev.kibet.androidprojecttemplate.viewmodels
 
 import androidx.lifecycle.ViewModel
-import dev.kibet.domain.repository.MainRepository
+import dev.kibet.domain.usecases.MainUseCase
 
-class MainViewModel(private val repository: MainRepository) : ViewModel() {
+class MainViewModel(private val mainUseCase: MainUseCase) : ViewModel() {
 
 }
